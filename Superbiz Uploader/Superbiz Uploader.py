@@ -5,11 +5,9 @@ try:
     import requests
     import urllib.request
     import os
-    import ctypes
     import json
     import datetime
     import sys
-    ctypes.windll.kernel32.SetConsoleTitleW("Superbiz Uploader - By Adaks")
     os.system('cls')
     import json
     import configparser
@@ -18,8 +16,9 @@ try:
     import colorama
     from colorama import init, Fore, Back, Style
     init()
-except:
+except Exception as e:
     print("[ERROR] There was an issue importing the required modules, make sure to install all modules in requirements.txt.")
+    print(f"Detailed Error: {e}")
     input()
     
 my_os=sys.platform
