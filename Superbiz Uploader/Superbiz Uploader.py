@@ -8,6 +8,7 @@ try:
     import json
     import datetime
     import sys
+    os.system("title Superbiz Uploader - By Adaks")
     os.system('cls')
     import json
     import configparser
